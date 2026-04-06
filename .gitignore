@@ -1,0 +1,5 @@
+# extra stuff
+*.o
+*.json
+*.bin
+*.lock
