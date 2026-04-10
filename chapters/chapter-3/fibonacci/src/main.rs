@@ -6,7 +6,7 @@ fn main() {
     let mut n = String::new();
 
     // Read in our Nth term
-    println!("Input the Nth term to compute in the Fibonacci number (0-index):");
+    println!("Input the Nth term to compute the Fibonacci number (0-index):");
     io::stdin()
         .read_line(&mut n)
         .expect("Could not read line!");
@@ -24,12 +24,12 @@ fn main() {
         let mut _num1: u64 = 0;
         let mut _num2: u64 = 1;
 
-        for _ in 2..n {
+        for _ in 2..n+1 {
             let next_i: u64 = _num1 + _num2;
             _num1 = _num2;
             _num2 = next_i;
         }
-        println!("The Nth: {} Fib number is: {}", n-1, _num2);
+        println!("The Nth: {} Fib number is: {}", n, _num2);
     }
 }
 
